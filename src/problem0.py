@@ -306,17 +306,15 @@ def problem0c(circle, n, window):
     #   renders with a half-second pause after rendering.
     ####################################################################
     # ------------------------------------------------------------------
-    x = circle.center.x
-    y = circle.center.y
+
     r = circle.radius
-    fill = circle.fill_color
-    outline = circle.outline_color
+    x = circle.center.x + 2 * r
+    y = circle.center.y
+
+    circle.attach_to(window)
 
     for k in range(n):
         circle = rg.Circle(rg.Point(x + 2 * k * r, y), r)
-        circle.fill_color = fill
-        circle.outline_color = outline
-
         circle.attach_to(window)
         window.render(.5)
 
