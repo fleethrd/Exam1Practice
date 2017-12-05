@@ -196,6 +196,12 @@ def problem2b(rect, n, delta, win):
     #    TIME ESTIMATE:   15 to 25 minutes.
     # ------------------------------------------------------------------
 
+    x = rectangle.get
+
+
+    for k in range(n + 1):
+
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
